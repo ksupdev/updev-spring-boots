@@ -10,4 +10,4 @@
 - xxxx
 
 ### Project example
-- [spring-boot-simple-restapi](www.google.com) - Demo example restapi
+- [spring-boot-simple-rest-service](www.google.com) - Demo example restapi
