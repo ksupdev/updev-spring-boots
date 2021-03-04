@@ -12,6 +12,29 @@ public class ApiRequest<T> {
 ```
 โดย T จะเป็นการระบุ Object ที่จะเป็นโครงสร้างข้อมูลที่รับเข้ามา
 
+### Implement common/ApiResponse.java
+```
+
+@Data
+public class ApiResponse<T> {
+    private boolean status; // false/true
+    private T data;
+    private String message;
+    private ERRCODE errCode;
+
+    public static <T> ApiResponse<T> success(T object) {    }
+
+    public static <T> ApiResponse<T> success(T object, String message) {}
+
+    public static <T> ApiResponse<T> fail(ERRCODE errCode, String message) {}
+
+    public enum ERRCODE {
+        REQUIRED, NOTEQUAL, LOWERLENGTH, OVERLENGTH, FAILED, PATTERN, MISMATCH, DUPLICATED, UNSUPPORTMEDIATYPE, UNKNOWERROR, ERROR
+    };
+}
+
+```
+
 
 ### command
 ```
