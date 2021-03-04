@@ -11,3 +11,4 @@
 
 ### Project example
 - [spring-boot-simple-rest-service](spring-boot-simple-rest-service) - Demo example restapi
+- [spring-boot-simple-rest-service-v2] (spring-boot-simple-rest-service-v2) - จะเป็นการแสดงผลในส่วนของ Presenter ให้มีรูปแบบที่เป็น Pattern เดียวกันทุก Service
