@@ -42,15 +42,31 @@ public class ApiResponse<T> {
 mvn clean compile spring-boot:run
 ```
 Service list
- - Get employee ``http://localhost:8089/simple-rest-v2/api/v1/simple/employees``
+ - Get employees ``http://localhost:8089/simple-rest-v2/api/v1/simple/employees``
  ```
-[
-  {
+{
+  "status": true,
+  "data": [
+    {
+      "id": 1,
+      "name": "Test data",
+      "role": "Developer"
+    }
+  ],
+  "message": "Query success",
+  "errCode": null
+}
+```
+ - Get employee ``http://localhost:8089/simple-rest-v2/api/v1/simple/employee``
+ ```
+{
+  "status": true,
+  "data": {
     "id": 1,
     "name": "Test data",
     "role": "Developer"
-  }
-]
-```
-
+  },
+  "message": "Query success",
+  "errCode": null
+}
 ```
