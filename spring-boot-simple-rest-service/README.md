@@ -1,6 +1,6 @@
 # spring-boot-simple-rest-service
 I would like create simple rest service,
-This project i try to use Clean architecture to create this project [clean architecture](eliostvs/clean-architecture-delivery-example)
+This project i try to use Clean architecture to create this project [clean architecture](https://github.com/ksupdev/clean-architecture-delivery-example)
 
 ### command
 ``
